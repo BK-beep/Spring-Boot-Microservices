@@ -1,0 +1,10 @@
+spring:
+  data:
+    mongodb:
+      username: khaoula
+      password: khaoula
+      host: localhost
+      port: 27017
+      authentication-database: admin
+server:
+  port: 8090
