@@ -16,13 +16,13 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CustomerController {
     private final CustomerService service;
-    @PostMapping
+    @PostMapping("/create")
     public ResponseEntity<String> createCustomer(
             @RequestBody @Valid CustomerRequest request){
         return ResponseEntity.ok(service.createCustomer(request));
     }
 
-    @PostMapping
+    @PostMapping("update")
     public ResponseEntity<String> updateCustomer(
             @RequestBody @Valid CustomerRequest request){
         return ResponseEntity.ok(service.updateCustomer(request));
